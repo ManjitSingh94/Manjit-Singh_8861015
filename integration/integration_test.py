@@ -1,10 +1,17 @@
 # import addition
 # import multiplication
 import calculator
-def test_integration():
+def test_integration1():
     # Test multiplying the result of adding two numbers with another number
     assert calculator.multiply(calculator.add(2, 3), 4) == 20
 
+def test_integration2():
+    # Test subtracting the result of multiplying two numbers with another number
+    assert calculator.subtract(calculator.multiply(2, 3), 4) == 2
+
+def test_integration3():
+    # Test dividing the result of subtracting two numbers with another number
+    assert calculator.divide(calculator.subtract(10, 2), 2) == 4
 
 
 ## Unit testing
